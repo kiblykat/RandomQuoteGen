@@ -27,7 +27,7 @@ class App extends Component {
             <div className='app'>
                 <div className='card'>
                     <h1 className='heading'>{this.state.advice}</h1>
-                    <button className='button'>
+                    <button className='button' onClick={this.fetchAdvice}>
                         <span>new advice!</span>
                     </button>
                 </div>

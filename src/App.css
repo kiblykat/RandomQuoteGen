@@ -16,6 +16,9 @@
 }
 
 .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
     width: 40%;
     /* height:20%; */
@@ -35,9 +38,6 @@
 }
 
 .button {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
