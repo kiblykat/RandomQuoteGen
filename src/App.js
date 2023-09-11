@@ -24,7 +24,14 @@ class App extends Component {
 
     render() {
         return (
-            <h1>{this.state.advice}</h1>
+            <div className='app'>
+                <div className='card'>
+                    <h1 className='heading'>{this.state.advice}</h1>
+                    <button className='button'>
+                        <span>new advice!</span>
+                    </button>
+                </div>
+            </div>
         )
     }
 }

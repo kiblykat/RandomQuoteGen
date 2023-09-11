@@ -1,7 +1,48 @@
-#root,html,body{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    height:100vh;
+#root, html, body{
+ margin:0;
+ padding:0;
+ height:100vh;
+ box-sizing:border-box;
 }
+
+.app {
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('.././images/city.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: whitesmoke;
+    width: 40%;
+    /* height:20%; */
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    color:black;
+    display:block;
+    margin:auto;
+    padding:auto;
+}
+
+.heading{
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+    padding:15px;
+  }
 
