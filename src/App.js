@@ -28,7 +28,7 @@ class App extends Component {
             <div className='app'>
                 <div className='card'>
                     <h1 className='heading'>{this.state.advice}</h1>
-                    <a className='tweet' target='_blank' rel='noopener noreferrer' href={`https://twitter.com/intent/tweet?text=${this.state.advice}`}>
+                    <a className='tweet' target='_blank' rel='noreferrer' href={`https://twitter.com/intent/tweet?text=${this.state.advice}`}>
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                     <button className='button' onClick={this.fetchAdvice}>
