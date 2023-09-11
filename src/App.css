@@ -5,14 +5,72 @@
  box-sizing:border-box;
 }
 
+@keyframes changeBackground{
+    0%, 20% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-furry-cat-indoors_23-2150679272.jpg?t=st=1694425944~exp=1694429544~hmac=a2dc385fba4ef1aa018943aee011a7f7742ffad8b452c9c4a5665a33dc56ac72&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+    20%, 40% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-cat-relaxing-indoors_23-2150692906.jpg?t=st=1694425937~exp=1694429537~hmac=85a0e2b8236e6d8773282e5fb8e0730f4b67828c2949f5aadee3361ac764e533&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+    40%, 60% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-furry-cat-outdoors_23-2150679324.jpg?t=st=1694424114~exp=1694427714~hmac=f92d48d9066e058e6f8cd8ecf64c93931a6c2db82474eefcb5717628f8f8847d&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+    60%, 80% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-cat-relaxing-indoors_23-2150692916.jpg?t=st=1694425939~exp=1694429539~hmac=f40a81db98fac368d5a9b9b42e376c818ce555ea63a6905cdca116cc7bf12e74&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+    80%, 100% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/adorable-cat-relaxing-indoors_23-2150692838.jpg?t=st=1694425941~exp=1694429541~hmac=1f8dc9ca4e42e1cf51f2213bcb7953c07b688eb52341a79b8ac5123442364a37&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+    100% {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-furry-cat-indoors_23-2150679272.jpg?t=st=1694425944~exp=1694429544~hmac=a2dc385fba4ef1aa018943aee011a7f7742ffad8b452c9c4a5665a33dc56ac72&w=1380');
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        height:100%;
+    }
+  }
+
 .app {
-    height:100%;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-furry-cat-outdoors_23-2150679324.jpg?t=st=1694424114~exp=1694427714~hmac=f92d48d9066e058e6f8cd8ecf64c93931a6c2db82474eefcb5717628f8f8847d&w=1380');
-    background-size: cover;
+    animation: changeBackground 30s infinite;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    height: 100%;
+    transition: background-image 10s ease; /*why this dont work? */
 }
 
 .card{
@@ -21,7 +79,6 @@
     justify-content: center;
     background-color: whitesmoke;
     width: 40%;
-    /* height:20%; */
     border-radius: 10px;
     box-shadow: 10px 10px;
     color:black;
@@ -37,7 +94,7 @@
     font-family: 'League Spartan', sans-serif;
 }
 
-.button {
+.newAdvice {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -47,8 +104,14 @@
     border-radius: 5px;
   }
 
-.button:hover{
+.newAdvice:hover{
     cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tweet{

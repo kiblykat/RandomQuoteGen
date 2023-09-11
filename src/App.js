@@ -23,17 +23,20 @@ class App extends Component {
             })    
     }    
 
+
     render() {
         return (
             <div className='app'>
                 <div className='card'>
                     <h1 className='heading'>{this.state.advice}</h1>
-                    <a className='tweet' target='_blank' rel='noreferrer' href={`https://twitter.com/intent/tweet?text=${this.state.advice}`}>
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <button className='button' onClick={this.fetchAdvice}>
-                        <span>new advice!</span>
-                    </button>
+                   <div className='buttons'>
+                        <a className='tweet' target='_blank' rel='noreferrer' href={`https://twitter.com/intent/tweet?text=${this.state.advice}`}>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <button className='newAdvice' onClick={this.fetchAdvice}>
+                            <span>new advice!</span>
+                        </button>
+                   </div>
                 </div>
             </div>
         )
