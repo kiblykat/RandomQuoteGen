@@ -7,7 +7,7 @@
 
 .app {
     height:100%;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('.././images/city.jpg');
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://img.freepik.com/free-photo/cute-furry-cat-outdoors_23-2150679324.jpg?t=st=1694424114~exp=1694427714~hmac=f92d48d9066e058e6f8cd8ecf64c93931a6c2db82474eefcb5717628f8f8847d&w=1380');
     background-size: cover;
     background-position: center;
     display: flex;
